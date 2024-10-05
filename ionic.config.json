@@ -1,0 +1,7 @@
+{
+  "name": "ec2lt_gps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
