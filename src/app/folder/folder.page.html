@@ -15,7 +15,8 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong *ngIf="profile" class="capitalize">Votre potision est en cours de capture et sychronisation en temps reel</strong>
+    <strong *ngIf="!profile" class="capitalize">Veuillez vous authentifier via le menu a gauche pour synchroniser votre position</strong>
+    <!-- <div>TODO: si le gars est connecte on affiche maps avec un marqueur en haut on lui dit que le tracking est actif. Sur la map on met un marqeur</div> -->
   </div>
 </ion-content>
